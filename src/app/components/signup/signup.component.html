@@ -1,0 +1,68 @@
+  <section class="vh-100">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-xl-10">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-6 col-lg-5 d-none d-md-block">
+                  <img [src]="imageUrl"
+                    alt="login form" class="img-fluid"/>
+                </div>
+                <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                  <div class="card-body p-4 p-lg-5 text-black">
+
+                      <div class="d-flex align-items-center mb-3 pb-1">
+                        <img [src]="LoginLogo" alt="LoginLogo" class="img-logo">
+                        
+                      </div>
+                      <span class="login-span">Sig up account:</span>
+                      <hr>
+                      <div class="form-outline mb-4">
+                          <label class="form-label" for="form2Example1">First Name</label>
+                        <input type="text" id="form2Example1" name="fname" class="form-control" />
+                      </div>
+                      <div class="form-outline mb-4">
+                          <label class="form-label" for="form2Example2">Last Name</label> 
+                        <input type="text" id="form2Example2" name="lname" class="form-control">
+                        </div>
+                        <!-- Email input -->
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example3">Email address</label>
+                        <input type="email" [(ngModel)]="email" name="email" class="form-control" />
+                      </div>
+                      <!-- Password input -->
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example4">Password</label>
+                        <input type="password" [(ngModel)]="password" name="password" class="form-control" />
+                      </div>                 
+                      <div class="pt-1 mb-4">
+                        <button class="btn btn-primary btn-lg btn-block" type="button" (click)="signup()">Signup</button>
+                      </div>
+                      <!-- Register buttons -->
+                      <div class="text-center">
+                        <p>or sign up with:</p>
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </button>
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-google" aria-hidden="true"></i>
+                      </button>
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                      </button>
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                      </button>
+                      </div>                      
+                      <a href="#!" class="small text-muted">Terms of use.</a> |
+                      <a href="#!" class="small text-muted">Privacy policy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+

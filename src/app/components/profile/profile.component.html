@@ -1,0 +1,18 @@
+
+
+<div class="p-wrapper">
+    <h1>{{title}}</h1> <!-- interpolation{{}} --> 
+    <hr>
+    <img [src]="imageUrl" width="300" alt="image1"> <!-- property binding -->
+    <hr>
+    <button (click)="incrementCount()">Click To increment view</button>| <button>Counter:{{viewCount}}</button>
+    <hr>
+   
+
+    <!-- two way  -->
+    <div>
+        <input type="text" [(ngModel)]="firstName" name="first">
+        <p>Hello, {{firstName}}</p>
+    </div>
+
+</div>
