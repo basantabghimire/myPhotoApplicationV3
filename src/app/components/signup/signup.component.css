@@ -9,9 +9,9 @@
   border-radius: 1rem;
 }
 .img-logo{
-  margin-left: 35%;
-  margin-top: -15%;
-  width: 100px;
+  margin-left: 39%;
+  margin-top: -5%;
+  width: 50px;
 }
 .login-span{
   font-weight: bolder;
@@ -32,4 +32,6 @@
 }
 .img-fluid{
   border-radius: 1rem 1rem 1rem 1rem;
+  width:max-content;
+  height:100%;
 }
